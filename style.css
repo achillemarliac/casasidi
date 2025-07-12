@@ -582,6 +582,18 @@ html {
   .photo-galerie-entiere {
     max-height: 220px;
   }
+  .galeria-fotos .photo-galerie-entiere {
+    width: 100%;
+    height: 180px;
+    max-width: 100%;
+    max-height: 180px;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
   /* Navigation mobile adaptée */
   nav#main-nav a {
     font-size: 0.95rem;
