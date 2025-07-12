@@ -529,12 +529,15 @@ html {
   }
 }
 @media (max-width: 900px) {
-  nav#main-nav {
-    display: flex;
+  .main-nav {
+    display: none;
     flex-direction: column;
     align-items: stretch;
   }
-  nav#main-nav a {
+  .main-nav.open {
+    display: flex;
+  }
+  .main-nav a {
     display: block;
     margin: 0.7rem 0;
     font-size: 1.2rem;
