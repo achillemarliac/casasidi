@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Sidi - Restaurante Marroquí en Madrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://em-content.zobj.net/source/telegram/358/shallow-pan-of-food_1f958.png" />
+  <style>
+    .burger-menu {
+      display: flex !important;
+      position: fixed !important;
+      top: 20px !important;
+      left: 20px !important;
+      z-index: 9999 !important;
+      background: #ffe5c0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-particles"></canvas>
+  <header class="banner">
+    <div class="burger-menu burger-fixed" aria-label="Ouvrir le menu" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a href="index.html"><img src="FE9309F2-E7D3-4D06-BBA6-DCA5E7062AB0.PNG" alt="Casa Sidi logo" class="logo-casasidi" style="width:120px;height:auto;display:block;margin:0 auto;"></a>
+    <div class="lang-switcher">
+      <button aria-label="Español" class="lang-btn" data-lang="es">ES</button>
+      <button aria-label="Français" class="lang-btn" data-lang="fr">FR</button>
+      <button aria-label="English" class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <p class="slogan">Sabores auténticos de Marruecos en el corazón de España</p>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="#especialidades">Menú</a>
+      <a href="acerca.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="presentacion anim-fadein">
+      <h2>Bienvenido a Casa Sidi</h2>
+      <p>Descubre una experiencia culinaria única con los mejores platos marroquíes, preparados con pasión y tradición.</p>
+    </section>
+    <div class="separator-motif"></div>
+    <section class="galeria anim-slidein">
+      <h2 id="titre-galerie">Nuestro restaurante</h2>
+      <div class="galeria-fotos">
+        <img class="photo-galerie-entiere" src="327cb9f3-37ef-498f-9580-f2cbccc6432d.JPG" alt="Façade du restaurant Casa Sidi - Vue principale du restaurant Casa Sidi">
+        <img class="photo-galerie-entiere" src="262216d8-fd4c-4040-9580-0344fa708b64.JPG" alt="Façade du restaurant Casa Sidi - Vue secondaire du restaurant Casa Sidi">
+      </div>
+    </section>
+    <div class="separator-motif"></div>
+    <section class="especialidades anim-fadein" id="especialidades">
+      <h2>Nuestras especialidades</h2>
+      <ul class="menu-plats">
+        <li><div class="photo-case"><img class="photo-case-img" src="pollo.JPG" alt="Pollo a la brasa" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Pollo a la brasa</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="pastela.JPG" alt="Pastela de pollo o pescado" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Pastela de pollo o pescado</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="tajin.JPG" alt="Tajín de carne con ciruelas" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Tajín de carne con ciruelas</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="cuscus.jpg" alt="Cuscús marroquí" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Cuscús marroquí</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="pincho.JPG" alt="Pincho moruno" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Pincho moruno</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="te moruno.JPG" alt="Té moruno con dulce árabe" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Té moruno con dulce árabe</li>
+        <li><div class="photo-case"><img class="photo-case-img" src="ensalada.JPG" alt="Ensalada marroquí" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div> Ensalada marroquí</li>
+      </ul>
+    </section>
+    <div class="separator-motif"></div>
+    <section class="equipo anim-fadein">
+      <h2>El equipo</h2>
+      <div class="photo-case">Foto del equipo</div>
+      <p>Un equipo apasionado por la gastronomía marroquí y la hospitalidad.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-shortcuts">
+      <a href="acerca.html" class="footer-btn">À propos de nous</a>
+      <a href="contacto.html" class="footer-btn">Si vous voulez nous contacter</a>
+    </div>
+    <p>&copy; 2024 Casa Sidi. Todos los derechos reservados.</p>
+  </footer>
+  <div class="transition-page"></div>
+  <script src="script.js"></script>
+</body>
+</html> 
