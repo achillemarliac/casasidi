@@ -551,11 +551,14 @@ html {
   }
   /* Navigation mobile adaptée */
   nav#main-nav a {
-    font-size: 1.1rem;
-    margin: 1rem 1.5rem;
-    padding: 0.8rem 1rem;
-    border-radius: 8px;
-    width: calc(100% - 3rem);
+    font-size: 0.95rem;
+    margin: 0.8rem 2rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    width: calc(100% - 4rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   /* Menu adapté pour mobile */
   .menu-plats li {
