@@ -549,7 +549,22 @@ html {
   .photo-galerie-entiere {
     max-height: 220px;
   }
-  /* On ne réduit plus la taille des .menu-plats .photo-case sur mobile */
+  /* Menu adapté pour mobile */
+  .menu-plats li {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    gap: 0.8rem;
+  }
+  .menu-plats .photo-case {
+    width: 120px;
+    height: 120px;
+  }
+  .photo-case-img {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+  }
 }
 .footer-shortcuts {
   display: flex;
