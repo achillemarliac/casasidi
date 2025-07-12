@@ -549,6 +549,14 @@ html {
   .photo-galerie-entiere {
     max-height: 220px;
   }
+  /* Navigation mobile adaptée */
+  nav#main-nav a {
+    font-size: 1.1rem;
+    margin: 1rem 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    width: calc(100% - 3rem);
+  }
   /* Menu adapté pour mobile */
   .menu-plats li {
     font-size: 1rem;
