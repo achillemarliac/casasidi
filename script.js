@@ -80,11 +80,14 @@ document.addEventListener('DOMContentLoaded', function() {
       contacto: "Contacto",
       contact_title: "Contáctanos",
       contact_info: "Información de contacto",
-      address: "C. Peroniño, 60, 30205 Cartagena, Murcia, España",
-      phone: "Teléfono: +34 632 66 59 18",
+      address_label: "Dirección:",
+      address_value: "C. Peroniño, 60, 30205 Cartagena, Murcia, España",
+      phone_label: "Teléfono:",
+      phone_value: "+34 632 66 59 18",
       email: "Email: info@casasidi.com",
       hours: "Los horarios pueden variar. Para mayor seguridad, realice su reserva previamente.",
-      schedule: "Horario:",
+      schedule_label: "Horario:",
+      schedule_value: "Lunes a Domingo, 12:00 - 23:00",
       redes: "Nuestras redes sociales",
       legal_link: "Aviso legal",
       // Page à propos
@@ -145,11 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
       contacto: "Contact",
       contact_title: "Contactez-nous",
       contact_info: "Informations de contact",
-      address: "C. Peroniño, 60, 30205 Cartagena, Murcia, Espagne",
-      phone: "Téléphone : +34 632 66 59 18",
+      address_label: "Adresse :",
+      address_value: "C. Peroniño, 60, 30205 Cartagena, Murcia, Espagne",
+      phone_label: "Téléphone :",
+      phone_value: "+34 632 66 59 18",
       email: "Email : info@casasidi.com",
       hours: "Les horaires peuvent varier. Pour plus de sécurité, veuillez réserver au préalable.",
-      schedule: "Horaires :",
+      schedule_label: "Horaires :",
+      schedule_value: "Lundi à Dimanche, 12:00 - 23:00",
       redes: "Nos réseaux sociaux",
       legal_link: "Mentions légales",
       // Page à propos
@@ -208,11 +214,14 @@ document.addEventListener('DOMContentLoaded', function() {
       contacto: "Contact",
       contact_title: "Contact us",
       contact_info: "Contact information",
-      address: "C. Peroniño, 60, 30205 Cartagena, Murcia, Spain",
-      phone: "Phone: +34 632 66 59 18",
+      address_label: "Address:",
+      address_value: "C. Peroniño, 60, 30205 Cartagena, Murcia, Spain",
+      phone_label: "Phone:",
+      phone_value: "+34 632 66 59 18",
       email: "Email: info@casasidi.com",
       hours: "Hours may vary. For certainty, please book in advance.",
-      schedule: "Hours:",
+      schedule_label: "Hours:",
+      schedule_value: "Monday to Sunday, 12:00 - 23:00",
       redes: "Our social networks",
       legal_link: "Legal Notice",
       // Page à propos
@@ -293,14 +302,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Page contact
     // Contact info (adresse, téléphone, email, horaires)
     if (window.location.pathname.endsWith('contacto.html')) {
-      // Traduction des éléments avec data-lang
-      const elements = document.querySelectorAll('[data-lang]');
-      elements.forEach(el => {
-        const key = el.dataset.lang;
-        if (t[key]) {
-          el.textContent = t[key];
-        }
-      });
+      const contactDetails = document.querySelector('.contact-details');
+      if (contactDetails) {
+        const ps = contactDetails.querySelectorAll('p');
+        if (ps[0]) ps[0].innerHTML = `<strong data-lang="address">${t.address_label}</strong> ${t.address_value}`;
+        if (ps[1]) ps[1].innerHTML = `<strong data-lang="phone">${t.phone_label}</strong> ${t.phone_value}`;
+        if (ps[2]) ps[2].innerHTML = `<strong data-lang="schedule">${t.schedule_label}</strong> ${t.hours}`;
+      }
+      
+      const contactInfoSection = document.querySelector('.anim-slidein');
+      if (contactInfoSection) {
+        const h2 = contactInfoSection.querySelector('h2');
+        if (h2) h2.textContent = t.contact_info;
+      }
     }
     // Réseaux sociaux
     const contactTitle = document.querySelector('.redes-sociales h3');
