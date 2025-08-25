@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       phone: "Teléfono: +34 632 66 59 18",
       email: "Email: info@casasidi.com",
       hours: "Los horarios pueden variar. Para mayor seguridad, realice su reserva previamente.",
+      schedule: "Horario:",
       redes: "Nuestras redes sociales",
       legal_link: "Aviso legal",
       // Page à propos
@@ -148,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
       phone: "Téléphone : +34 632 66 59 18",
       email: "Email : info@casasidi.com",
       hours: "Les horaires peuvent varier. Pour plus de sécurité, veuillez réserver au préalable.",
+      schedule: "Horaires :",
       redes: "Nos réseaux sociaux",
       legal_link: "Mentions légales",
       // Page à propos
@@ -210,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
       phone: "Phone: +34 632 66 59 18",
       email: "Email: info@casasidi.com",
       hours: "Hours may vary. For certainty, please book in advance.",
+      schedule: "Hours:",
       redes: "Our social networks",
       legal_link: "Legal Notice",
       // Page à propos
@@ -289,17 +292,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btnContact && t.btn_contact) btnContact.textContent = t.btn_contact;
     // Page contact
     // Contact info (adresse, téléphone, email, horaires)
-    const contactInfoSection = document.querySelector('.anim-slidein');
-    if (contactInfoSection) {
-      const ps = contactInfoSection.querySelectorAll('p');
-      if (ps[0]) ps[0].textContent = t.address;
-      if (ps[1]) ps[1].textContent = t.phone;
-      if (ps[2]) ps[2].textContent = t.hours;
-      const h2 = contactInfoSection.querySelector('h2');
-      // Titre de la section contact (page contact uniquement)
-      if (h2 && window.location.pathname.endsWith('contacto.html')) {
-        h2.textContent = t.contact_info;
-      }
+    if (window.location.pathname.endsWith('contacto.html')) {
+      // Traduction des éléments avec data-lang
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key]) {
+          el.textContent = t[key];
+        }
+      });
     }
     // Réseaux sociaux
     const contactTitle = document.querySelector('.redes-sociales h3');
@@ -330,14 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
         eqTxt.textContent = t.equipo_txt;
       }
     }
-    // Titre contact uniquement sur la page contact
-    if (window.location.pathname.endsWith('contacto.html')) {
-      const contactInfoSection = document.querySelector('.anim-slidein');
-      if (contactInfoSection) {
-        const h2 = contactInfoSection.querySelector('h2');
-        if (h2) h2.textContent = t.contact_info;
-      }
-    }
+
     
     // Traduction du lien "Mentions légales" dans le footer (toutes les pages)
     const legalLink = document.querySelector('a[href="mentions-legales.html"]');
