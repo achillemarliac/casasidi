@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
       btn_contact: "Si quieres contactarnos",
       galeria: "Nuestro restaurante",
       equipo: "El equipo",
-      equipe_txt: "Casa Sidi es un restaurante creado, gestionado y animado por una sola y misma familia, motivada por compartir la cultura culinaria marroquí y sus auténticos sabores.",
+      equipo_txt: "Casa Sidi es un restaurante creado, gestionado y animado por una sola y misma familia, motivada por compartir la cultura culinaria marroquí y sus auténticos sabores.",
       nav: ["Inicio", "Menú", "Sobre nosotros", "Contacto"],
       especialidades: "Nuestras especialidades",
       plats: [
@@ -83,8 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
       address: "C. Peroniño, 60, 30205 Cartagena, Murcia, España",
       phone: "Teléfono: +34 632 66 59 18",
       email: "Email: info@casasidi.com",
-      hours: "Horario: Lunes a Domingo, 12:00 - 23:00",
+      hours: "Los horarios pueden variar. Para mayor seguridad, realice su reserva previamente.",
       redes: "Nuestras redes sociales",
+      legal_link: "Aviso legal",
       // Page à propos
       sobre: "Sobre nosotros",
       historia: "Nuestra historia",
@@ -93,7 +94,31 @@ document.addEventListener('DOMContentLoaded', function() {
       equipo: "El equipo",
       equipo_txt: "Casa Sidi es un restaurante creado, gestionado y animado por una sola y misma familia, motivada por compartir la cultura culinaria marroquí y sus auténticos sabores.",
       valores_list: ["Autenticidad", "Hospitalidad", "Calidad", "Tradición"],
-      galeria: "Nuestro restaurante"
+      galeria: "Nuestro restaurante",
+      // Page mentions légales
+      legal_title: "Aviso legal",
+      company_info: "Información de la empresa",
+      company_name: "Nombre:",
+      legal_form: "Forma jurídica:",
+      legal_form_value: "Empresario individual",
+      tax_number: "NIF:",
+      address: "Dirección:",
+      phone: "Teléfono:",
+      hosting: "Alojamiento",
+      hosting_info: "Este sitio está alojado por Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, Estados Unidos.",
+      intellectual_property: "Propiedad intelectual",
+      intellectual_property_info: "Todo este sitio está sujeto a la legislación española e internacional sobre derechos de autor y propiedad intelectual. Todos los derechos de reproducción están reservados, incluyendo para documentos descargables y representaciones iconográficas y fotográficas.",
+      data_protection: "Protección de datos personales",
+      data_protection_info: "De acuerdo con el Reglamento General de Protección de Datos (RGPD), tiene derecho a acceder, rectificar y eliminar los datos que le conciernen. Para ejercer estos derechos, contáctenos por teléfono.",
+      cookies: "Cookies",
+      cookies_info: "Este sitio no utiliza cookies de seguimiento. Solo se pueden usar cookies técnicas para el buen funcionamiento del sitio.",
+      external_links: "Enlaces externos",
+      external_links_info: "Este sitio puede contener enlaces a sitios externos. Casa Sidi no es responsable del contenido de estos sitios.",
+      applicable_law: "Ley aplicable",
+      applicable_law_info: "Este aviso legal está sujeto a la ley española. En caso de disputa, solo los tribunales españoles tendrán jurisdicción.",
+      contact: "Contacto",
+      contact_info_legal: "Para cualquier pregunta sobre este aviso legal, puede contactarnos por teléfono al +34 632 66 59 18.",
+      last_update: "Última actualización: Agosto 2025"
     },
     fr: {
       slogan: "Saveurs authentiques du Maroc au cœur de l'Espagne",
@@ -122,15 +147,40 @@ document.addEventListener('DOMContentLoaded', function() {
       address: "C. Peroniño, 60, 30205 Cartagena, Murcia, Espagne",
       phone: "Téléphone : +34 632 66 59 18",
       email: "Email : info@casasidi.com",
-      hours: "Horaires : Lundi à Dimanche, 12h00 - 23h00",
+      hours: "Les horaires peuvent varier. Pour plus de sécurité, veuillez réserver au préalable.",
       redes: "Nos réseaux sociaux",
+      legal_link: "Mentions légales",
       // Page à propos
       sobre: "À propos",
       historia: "Notre histoire",
       historia_txt: "Casa Sidi est né de la passion pour la cuisine marocaine et du désir de partager ses saveurs authentiques en Espagne. C'est un restaurant créé, géré et animé par une seule et même famille, ce qui lui donne une ambiance chaleureuse et authentique. Chaque plat raconte une histoire, chaque épice évoque des souvenirs du Maroc.",
       valores: "Nos valeurs",
       valores_list: ["Authenticité", "Hospitalité", "Qualité", "Tradition"],
-      galeria: "Notre restaurant"
+      galeria: "Notre restaurant",
+      // Page mentions légales
+      legal_title: "Mentions légales",
+      company_info: "Informations sur l'entreprise",
+      company_name: "Nom :",
+      legal_form: "Forme juridique :",
+      legal_form_value: "Entrepreneur individuel",
+      tax_number: "NIF :",
+      address: "Adresse :",
+      phone: "Téléphone :",
+      hosting: "Hébergement",
+      hosting_info: "Ce site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.",
+      intellectual_property: "Propriété intellectuelle",
+      intellectual_property_info: "L'ensemble de ce site relève de la législation espagnole et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.",
+      data_protection: "Protection des données personnelles",
+      data_protection_info: "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ces droits, veuillez nous contacter par téléphone.",
+      cookies: "Cookies",
+      cookies_info: "Ce site n'utilise pas de cookies de tracking. Seuls des cookies techniques peuvent être utilisés pour le bon fonctionnement du site.",
+      external_links: "Liens externes",
+      external_links_info: "Ce site peut contenir des liens vers des sites externes. Casa Sidi n'est pas responsable du contenu de ces sites.",
+      applicable_law: "Droit applicable",
+      applicable_law_info: "Les présentes mentions légales sont soumises au droit espagnol. En cas de litige, les tribunaux espagnols seront seuls compétents.",
+      contact: "Contact",
+      contact_info_legal: "Pour toute question concernant ces mentions légales, vous pouvez nous contacter par téléphone au +34 632 66 59 18.",
+      last_update: "Dernière mise à jour : Août 2025"
     },
     en: {
       slogan: "Authentic Moroccan flavors in the heart of Spain",
@@ -159,15 +209,40 @@ document.addEventListener('DOMContentLoaded', function() {
       address: "C. Peroniño, 60, 30205 Cartagena, Murcia, Spain",
       phone: "Phone: +34 632 66 59 18",
       email: "Email: info@casasidi.com",
-      hours: "Hours: Monday to Sunday, 12:00pm - 11:00pm",
+      hours: "Hours may vary. For certainty, please book in advance.",
       redes: "Our social networks",
+      legal_link: "Legal Notice",
       // Page à propos
       sobre: "About us",
       historia: "Our story",
       historia_txt: "Casa Sidi was born from a passion for Moroccan cuisine and the desire to share its authentic flavors in Spain. It is a restaurant created, managed and run by a single family, which gives it a warm and authentic atmosphere. Each dish tells a story, each spice evokes memories of Morocco.",
       valores: "Our values",
       valores_list: ["Authenticity", "Hospitality", "Quality", "Tradition"],
-      galeria: "Our restaurant"
+      galeria: "Our restaurant",
+      // Page mentions légales
+      legal_title: "Legal Notice",
+      company_info: "Company Information",
+      company_name: "Name:",
+      legal_form: "Legal Form:",
+      legal_form_value: "Individual Entrepreneur",
+      tax_number: "Tax Number:",
+      address: "Address:",
+      phone: "Phone:",
+      hosting: "Hosting",
+      hosting_info: "This site is hosted by Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, United States.",
+      intellectual_property: "Intellectual Property",
+      intellectual_property_info: "This entire site is subject to Spanish and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations.",
+      data_protection: "Personal Data Protection",
+      data_protection_info: "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify and delete data concerning you. To exercise these rights, please contact us by phone.",
+      cookies: "Cookies",
+      cookies_info: "This site does not use tracking cookies. Only technical cookies may be used for the proper functioning of the site.",
+      external_links: "External Links",
+      external_links_info: "This site may contain links to external sites. Casa Sidi is not responsible for the content of these sites.",
+      applicable_law: "Applicable Law",
+      applicable_law_info: "These legal notices are subject to Spanish law. In case of dispute, only Spanish courts will have jurisdiction.",
+      contact: "Contact",
+      contact_info_legal: "For any questions regarding these legal notices, you can contact us by phone at +34 632 66 59 18.",
+      last_update: "Last update: August 2025"
     }
   };
 
@@ -263,6 +338,25 @@ document.addEventListener('DOMContentLoaded', function() {
         if (h2) h2.textContent = t.contact_info;
       }
     }
+    
+    // Traduction du lien "Mentions légales" dans le footer (toutes les pages)
+    const legalLink = document.querySelector('a[href="mentions-legales.html"]');
+    if (legalLink && t.legal_link) {
+      legalLink.textContent = t.legal_link;
+    }
+    // Page mentions légales
+    if (window.location.pathname.endsWith('mentions-legales.html')) {
+      console.log('Traduction mentions légales pour langue:', lang);
+      // Traduction des titres et textes
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key]) {
+          el.textContent = t[key];
+          console.log('Traduit:', key, '->', t[key]);
+        }
+      });
+    }
   }
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -341,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
       speed: 0.22 + Math.random() * 0.5,
       angle: Math.random() * Math.PI * 2,
       drift: (Math.random()-0.5) * 0.22,
-      alpha: 0.19 + Math.random() * 0.18
+      alpha: 0.15 + Math.random() * 0.18
     });
   }
 
@@ -351,9 +445,9 @@ document.addEventListener('DOMContentLoaded', function() {
       ctx.save();
       ctx.globalAlpha = p.alpha;
       const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r*2.2);
-      grad.addColorStop(0, '#ffe5c0');
-      grad.addColorStop(0.4, '#e6c77b');
-      grad.addColorStop(1, 'rgba(255,229,192,0)');
+      grad.addColorStop(0, '#ffffff');
+      grad.addColorStop(0.4, '#dddddd');
+      grad.addColorStop(1, 'rgba(255,255,255,0)');
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r*2.2, 0, Math.PI*2);
       ctx.fillStyle = grad;
